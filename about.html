@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Millie's Catering - About Us</title>
+  <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/sandstone/bootstrap.min.css" type="text/css" />
+  <link rel = "stylesheet" href="css/style.css" type="text/css" />
+
+  <script language="JavaScript" type="text/javascript">
+  function calc()  {
+      var guests = document.getElementById("guests").value;
+      var total = 0;
+      if (document.getElementById("caprese").checked == true) {
+        total += guests*6;
+      }
+      if (document.getElementById("fruit").checked == true) {
+        total += guests*7;
+      }
+      if (document.getElementById("pomegranate").checked == true) {
+        total += guests*7;
+      }
+      if (document.getElementById("mezze").checked == true) {
+        total += guests*7;
+      }
+      if (document.getElementById("chicken").checked == true) {
+        total += guests*10;
+      }
+      if (document.getElementById("salmon").checked == true) {
+        total += guests*11;
+      }
+      if (document.getElementById("kabob").checked == true) {
+        total += guests*7;
+      }
+      if (document.getElementById("pizza").checked == true) {
+        total += guests*8;
+      }
+      if (document.getElementById("ravioli").checked == true) {
+        total += guests*9;
+      }
+      if (document.getElementById("quesadillas").checked == true) {
+        total += guests*8;
+      }
+      if (document.getElementById("sandwiches").checked == true) {
+        total += guests*8;
+      }
+      if (document.getElementById("sliders").checked == true) {
+        total += guests*9;
+      }
+      if (document.getElementById("dessert").checked == true) {
+        total += guests*9;
+      }
+      if (document.getElementById("brownies").checked == true) {
+        total += guests*6;
+      }
+      if (document.getElementById("cupcakes").checked == true) {
+        total += guests*7;
+      }
+      console.log(total);
+      document.getElementById("totalest").innerHTML = total;
+    };
+  </script>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Millie's Catering</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href = "menu.html">Menu</a></li>
+          <li class="active"><a href = "about.html">About Us</a></li>
+          <li><a href = "testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <h1>About Millie's Catering</h1>
+    <main>
+      <p>Since 1996, Millie's Catering has been Boston's favorite catering company. We strive to serve the best foods made from the freshest ingredients, and can accomodate any diet and allergy needs your party requires.
+        We can serve any party of any size, from 6 to 600, with a week's notice. Book us for your next event!</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="about">Phone: (123) 456-7890 <br />
+            Email: <a href = "mailto:fake@milliescatering.com">fake@mailliescatering.com</a><br />
+            <address>Address: <strong>Millie's Catering</strong><br />
+              123 Fake Street<br />
+              Boston, MA <br />
+              02108<br />
+            </address>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3>Get an Estimate</h3>
+              Check out our <a href = "menu.html">Menu</a> and then estimate how much your event will cost!*
+              <div id="estimate">
+              <fieldset>
+                <label for="guests">Number of guests (6-600)</label><br/>
+                  <input type="text" id="guests" name="guests" size=3 min=6 max=600 required/>
+              </fieldset>
+              <fieldset>
+                <legend>Dishes</legend>
+                <input type="checkbox"  id="caprese" value="caprese" /><label for="caprese">Caprese Salad</label>
+                <input type="checkbox"  id="fruit" value="fruit" /><label for="fruit">Fruit Salad</label>
+                <input type="checkbox"  id="pomegranate" value="pomegranate" /><label for="pomegranate">Pomegranate Salad</label><br />
+                <input type="checkbox"  id="mezze" value="mezze" /><label for="mezze">Mezze Platter</label>
+                <input type="checkbox"  id="chicken" value="chicken" /><label for="chicken">Roast Chicken</label>
+                <input type="checkbox"  id="salmon" value="salmon" /><label for="salmon">Salmon</label><br />
+                <input type="checkbox"  id="kabob" value="kabob" /><label for="kabob">Shish Kabobs</label>
+                <input type="checkbox"  id="pizza" value="pizza" /><label for="pizza">Pizza</label>
+                <input type="checkbox"  id="ravioli" value="ravioli" /><label for="ravioli">Ravioli</label><br />
+                <input type="checkbox"  id="quesadillas" value="quesadillas" /><label for="quesadillas">Quesadillas</label>
+                <input type="checkbox"  id="sandwiches" value="sandwiches" /><label for="sandwiches">Sandwiches</label>
+                <input type="checkbox"  id="sliders" value="sliders" /><label for="sliders">Sliders</label><br />
+                <input type="checkbox"  id="dessert" value="dessert" /><label for="dessert">Dessert Selection</label>
+                <input type="checkbox"  id="brownies" value="brownies" /><label for="brownies">Fruit Salad</label>
+                <input type="checkbox"  id="cupcakes" value="cupcakes" /><label for="cupcakes">Cupcakes</label><br />
+              </fieldset>
+              <button onclick="calc()">Get Estimate</button>
+              <fieldset>
+              <label for="guests">Total Estimate</label><br/>
+                $<span id="totalest"><span></br>
+              </fieldset>
+            </div>
+            <p>*Does not include tax or service fees</p>
+          </div>
+
+          <div class="col-md-4" id="prize">
+            <div class="about">First place-Catering in Boston Journal's Best of Boston<br />
+              Five years running <br/>
+            <img src="img/icons/firstplace.png" alt="first place trophy"/></div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Millie's Catering 	●  (123) 456-7890 	●  123 Fake Street, Boston MA<br />
+        <span>
+          <a href = "404.html"><img src = "img/icons/Facebook.png" class="imgicon" alt="facebook"/></a>
+          <a href = "404.html"><img src = "img/icons/Twitter.png" class="imgicon" alt="twitter"/></a>
+          <a href = "404.html"><img src = "img/icons/Yelp.png" class="imgicon" alt="yelp"/></a>
+        </span>
+
+      </footer>
+    </body>
+    </html>

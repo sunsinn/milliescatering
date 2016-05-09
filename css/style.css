@@ -1,0 +1,82 @@
+footer {
+  border-top: groove 3px #93c54b;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+h1 {
+  border-style: groove;
+  border-width: 3px;
+  border-color: #93c54b;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  margin: 10px;
+  padding: 5px;
+}
+
+.about {
+  padding-top:150px;
+}
+
+.description {
+  display: none;
+}
+
+.fooddiv {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.fooddiv h5 {
+  margin: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: serif;
+}
+
+.imgicon {
+  height: 50px;
+  width: 50px;
+}
+
+.imgfood {
+  height: 240px;
+  width: 360px;
+}
+
+.imgmain {
+  height: 100%;
+  width: 100%;
+}
+
+.imgtest {
+  height:35%;
+  width:35%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+}
+
+.txtmain {
+  text-align:center;
+  display:block;
+}
+
+#estimate {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ccffb3;
+}
