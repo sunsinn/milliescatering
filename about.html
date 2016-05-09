@@ -81,6 +81,7 @@
   </nav>
   <header>
     <h1>About Millie's Catering</h1>
+  </header>
     <main>
       <p>Since 1996, Millie's Catering has been Boston's favorite catering company. We strive to serve the best foods made from the freshest ingredients, and can accomodate any diet and allergy needs your party requires.
         We can serve any party of any size, from 6 to 600, with a week's notice. Book us for your next event!</p>
@@ -101,7 +102,7 @@
               <div id="estimate">
               <fieldset>
                 <label for="guests">Number of guests (6-600)</label><br/>
-                  <input type="text" id="guests" name="guests" size=3 min=6 max=600 required/>
+                  <input type="text" id="guests" name="guests" size=3>
               </fieldset>
               <fieldset>
                 <legend>Dishes</legend>
@@ -123,8 +124,8 @@
               </fieldset>
               <button onclick="calc()">Get Estimate</button>
               <fieldset>
-              <label for="guests">Total Estimate</label><br/>
-                $<span id="totalest"><span></br>
+              <label for="guests">Total Estimate</label><br />
+                $<span id="totalest"></span><br />
               </fieldset>
             </div>
             <p>*Does not include tax or service fees</p>
